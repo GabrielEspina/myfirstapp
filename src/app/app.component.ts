@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Calendario Prueba';
+
+  turno = 'Turno 1';
+  horario= 'Horario 1';
+  descripcion = 'Oftalmologo;'
+
 }
