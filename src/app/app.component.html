@@ -1,27 +1,21 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">{{calendar.turno}}</h5>
-        <p class="card-text">{{calendar.horario}}</p>
-        <a href="#" class="btn btn-primary">{{calendar.descripcion}}</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">{{calendar.turno}}</h5>
-        <p class="card-text">{{calendar.horario}}</p>
-        <a href="#" class="btn btn-primary">{{calendar.descripcion}}</a>
-      </div>
-    </div>
-  </div>
+<div class="row" style="padding: 3%">
 
-  
-  
+
+      <div class="card border-primary mb-3" style="width: 50%;" *ngFor="let turno of turnos" >
+          <div class="card-header">{{turno.appointment_date}}</div>
+          <div class="card-body text-primary">
+            <h5 class="card-title">{{turno.speciality_name}}</h5>
+            <p class="card-text">Dr. {{turno.hcp_first_name +" " +turno.hcp_last_name}}</p>
+          </div>
+          <div class="card-footer bg-transparent border-primary">
+              
+              <button type="button" class="btn btn-outline-primary">Detalle</button>
+              <button type="button" class="btn btn-outline-secondary">Cancelar Turno</button>
+          </div>
+        </div>
+
+    
+
 </div>
-
-
