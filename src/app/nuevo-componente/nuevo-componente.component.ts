@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-nuevo-componente',
+  templateUrl: './nuevo-componente.component.html',
+  styleUrls: ['./nuevo-componente.component.css']
 })
-export class AppComponent {
-  title = 'Calendario Prueba';
+export class NuevoComponenteComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
   response = {
     "appointments": [
@@ -80,7 +84,5 @@ export class AppComponent {
 
   turnos = this.response.appointments;
 
-  show(){
-    console.log(this.response);
-  }
+
 }
