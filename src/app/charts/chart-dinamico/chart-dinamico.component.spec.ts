@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NuevoComponenteComponent } from './nuevo-componente.component';
+import { ChartDinamicoComponent } from './chart-dinamico.component';
 
-describe('NuevoComponenteComponent', () => {
-  let component: NuevoComponenteComponent;
-  let fixture: ComponentFixture<NuevoComponenteComponent>;
+describe('ChartDinamicoComponent', () => {
+  let component: ChartDinamicoComponent;
+  let fixture: ComponentFixture<ChartDinamicoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NuevoComponenteComponent ]
+      declarations: [ ChartDinamicoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NuevoComponenteComponent);
+    fixture = TestBed.createComponent(ChartDinamicoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

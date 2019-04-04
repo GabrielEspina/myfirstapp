@@ -1,22 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import { NuevoComponenteComponent } from './nuevo-componente/nuevo-componente.component';
-import { SegundoComponenteComponent } from './segundo-componente/segundo-componente.component';
-import { PrimerNuevoComponenteComponent } from './nuevo-componente/primer-nuevo-componente/primer-nuevo-componente.component';
-import { BarMenuComponent } from './bar-menu/bar-menu.component';
+import { ChartsModule } from 'ng2-charts';
+import { ChartDonaComponent } from './charts/chart-dona/chart-dona.component';
+import { ChartDinamicoComponent } from './charts/chart-dinamico/chart-dinamico.component';
+import { ChartsComponent } from './charts/charts.component';
+import { ChartLineComponent } from './charts/chart-line/chart-line.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NuevoComponenteComponent,
-    SegundoComponenteComponent,
-    PrimerNuevoComponenteComponent,
-    BarMenuComponent
-  ],
+    ChartDonaComponent,
+    ChartDinamicoComponent,
+    ChartsComponent,
+    ChartLineComponent,
+    NavbarComponent  ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
